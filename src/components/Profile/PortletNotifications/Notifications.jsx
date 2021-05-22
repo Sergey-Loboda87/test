@@ -1,7 +1,7 @@
 import React from 'react';
-import Form from './FormNotifications/Form_Notif';
+import Form from './FormNotifications/FormNotif';
 import style from './Notifications.module.css'
-import Form_Mes from './FormNotifications/Form_Mes'
+import FormMes from './FormNotifications/FormMes'
 
 
 const Notifications = () => {
@@ -15,7 +15,7 @@ const Notifications = () => {
       </div>
       <div className={style.item_body}>
         <Form />
-        <Form_Mes />
+        <FormMes />
       </div>
       <div className={style.item_footer}>
         <div className={style.buttom_container}>
