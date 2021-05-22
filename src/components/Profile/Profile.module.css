@@ -1,0 +1,10 @@
+.profile{
+    padding-left: 28px ;
+    padding-top: 28px;
+    display: grid;
+    grid-template-columns: 375px 910px;
+    grid-template-areas: 
+    'p b'
+    'none n';
+    gap: 28px 28px;  
+}
