@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import style from '../BasicProfile.module.css'
-
+import {FormErrors} from './FormErrors';
 
 class Form extends Component {
 
- //заведем с помощью конструктора локальный стайт где будем хранить сщщбщения и код ошибки при вводе данных в поле E-mail
+    //заведем с помощью конструктора локальный стайт где будем хранить сщщбщения и код ошибки при вводе данных в поле E-mail
     //Свойство formError содержит объект, который состоит из названия полей в качестве ключей и информации об ошибке 
     //в качестве значения. Первоначальное значение для каждого ключа является пустой строкой.
     //Поля emailValid и formValid которые зависят от валидации отдельного поля. По умолчанию установим значение в false 
@@ -41,9 +41,40 @@ class Form extends Component {
         console.log(event.target.value)
         const { name, value } = event.target;
         this.setState(
-            { [name]: value }
-            )
+            { [name]: value },
+            () => {
+                this.validateField(name, value)
+            }
+        )
+    }
+
+    //обработчик проверки формы E-mail на валидность Для поля электронной почты проверка осуществляется при помощи регулярного выражения.
+    //Если поле не прошло проверку, то мы записываем сообщение об ошибке для данного поля и устанавливаем свойство прохождения проверки в false .
+    //Затем вызываем setState для обновления formErrors и свойства прохождения проверки ( emailValid или passwordValid ). 
+    //Далее отправляем функцию обратного вызова validateForm для установки значения formValid .
+
+    validateField(imput, value) {
+        let fieldValidationErrors = this.state.formErrors;
+        let emailValid = this.state.emailValid;
+        switch (imput) {
+            case 'email':
+                emailValid = value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
+                fieldValidationErrors.email = emailValid ? '' : 'Поле E-mail не удовлетворяет формату!';
+                break;
+            default:
+                break;
         }
+        this.setState({
+            formErrors: fieldValidationErrors,
+            emailValid: emailValid,
+        }, this.validateForm);
+    }
+
+    validateForm() {
+        this.setState(
+            { formValid: this.state.emailValid }
+        );
+    }
 
 
     render() {
@@ -56,7 +87,7 @@ class Form extends Component {
                         name="firstName"
                         value={this.state.firstName}
                         onChange={this.handleChange}
-                       
+
                     />
                     <legend>Please specify the first name</legend>
                 </div>
@@ -78,6 +109,7 @@ class Form extends Component {
                         value={this.state.email}
                         onChange={this.handleChange}
                     />
+                 <FormErrors formErrors={this.state.formErrors}/>
                 </div>
                 <div>
                     <input
@@ -108,9 +140,9 @@ class Form extends Component {
                 </div>
                 <div>
                     <button className={style.button}
-                    onClick={this.handleSubmit}
-                    disabled={!(this.state.firstName && this.state.lastName && this.state.email)}>seve settings</button>
-                </div> 
+                        onClick={this.handleSubmit}
+                        disabled={!(this.state.firstName && this.state.lastName && this.state.emailValid)}>seve settings</button>
+                </div>
             </form >
         )
     }
