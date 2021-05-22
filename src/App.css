@@ -3,8 +3,14 @@
   height: 1080px;
   display: grid;
   grid-template-areas: 
-  "h h"
-  "m c";
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 9fr;
+  'h h'
+  's n'
+  's c';
+}
+
+.app-wrapper-content{
+  grid-area: c;
+  width: 1650px;
+  height: 959px;
+  background: #F9FAFB;
 }
