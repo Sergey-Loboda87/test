@@ -1,5 +1,67 @@
 .saidBar{
-grid-area: s;
-width: 270px;
-height: 1016px;
+    grid-area: s;
+    width: 270px;
+    height: 1016px;
+}
+
+.avatar{
+    height: 156px;
+    width: 112px;
+    margin: 24px auto;
+}
+.avatar img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.initials{
+    height: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #3A3B3F; 
+}
+.position{
+    height: 16px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #9EA0A5;
+}
+.position::after{
+    content: "";
+    display: block;
+    width: 238px;
+    height: 1px;
+    background: #E4E7EB;
+    margin-top: 23px;
+    margin-left: -65px;
+}
+.menu{
+    height: 316px;
+    width: 238px;
+    margin: 0 auto;
+}
+.menu_items{
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 20px;
+    text-align: left;
+    color: #66788A;
+}
+.menu_items::after{
+    content: "";
+    display: block;
+    width: 238px;
+    height: 1px;
+    background: #E4E7EB;
+    margin-top: 23px;
+    margin-left: -43px;
 }

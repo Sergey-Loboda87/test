@@ -17,9 +17,9 @@ function App() {
           <NavBar />
           <div className='app-wrapper-content'>
             <Route exact path='/' component={Profile} />
-            <Route exact path='/profile' component={Profile} />
-            <Route path='/account' component={Account} />
-            <Route path='/prisePlans' component={PrisePlans} />
+            <Route path='/profile' component={Profile} />
+            <Route path ='/account' component={Account} />
+            <Route path ='/prisePlans' component={PrisePlans} />
           </div>
         </div>
       </div>
