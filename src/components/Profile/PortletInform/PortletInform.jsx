@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './PortletInform.module.css'
-import ava from '/React-kabzda-kak-prosto/test/src/components/img/2.jpg'
+import ava from '../../img/2.jpg'
 
 
 const PortletInform = () => {
