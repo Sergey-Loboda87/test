@@ -7,3 +7,40 @@
     box-shadow: 0px 1px 3px rgba(63, 63, 68, 0.15);
     border-radius: 4px;
 }
+.inform{
+    height: 188px;
+}
+.inform::after{
+    content: "";
+    display: block;
+    height: 1px;
+    background: #E4E7EB;
+}
+.inform img{
+    height: 140px;
+    width: 140px;
+    left: 214px;
+    top: 26px;
+    border-radius: 13px;
+    margin: 24px 24px 85px 211px;
+}
+.footer{
+    height: 60px;
+}
+.footerItems{
+    display: flex;
+    justify-content: space-between;  
+    margin: 0 41px 0 41px;
+}
+.footer button{
+    height: 40px;
+    width: 147px;
+    border-radius: 4px; 
+    font-family: Roboto;
+    font-size: 12px;
+    letter-spacing: 1.25px;
+    text-align: center;
+    color:rgba(22, 101, 216, 1);
+    border: none;
+    background: none;
+}

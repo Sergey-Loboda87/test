@@ -13,7 +13,6 @@
 .item_header::after{
     content: "";
     display: block;
-    width: 910px;
     height: 1px;
     background: #E4E7EB;
     margin-top: 27px;

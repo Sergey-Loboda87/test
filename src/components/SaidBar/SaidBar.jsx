@@ -12,7 +12,7 @@ const SaidBar = () => {
         <p className={style.position}>Brain Director</p>
       </figure>
       <br />
-      <div className={style.menu}>
+      <div className={style.navMenu}>
         <ul className={style.menu_items}>
           <li>Dashboard</li>
           <br />
@@ -27,8 +27,11 @@ const SaidBar = () => {
           <li>Icons & Images</li>
         </ul>
       </div>
-      <div>
-        
+      <div className={style.supportMenu}>
+        <span>Support</span>
+        <ul>
+          <li>Support</li>
+        </ul>
       </div>
     </div>
   );
