@@ -7,14 +7,23 @@ const PortletInform = () => {
   return (
     <div className={style.item_container}>
       <div className={style.inform}>
-        <div>
+        <div className={style.informItems}>
+        <div className={style.personName}>
+          Adrian Stefan
+        </div>
+        <div className={style.geolocation}>
+          Rm. Valcea, Romania <wbr />
+          4:32PM (GMT-4)
+        </div>
+        </div>
+        <div className={style.avatar}>
           <img src={ava} alt="" />
         </div>
       </div>
       <div className={style.footer}>
         <div className={style.footerItems}>
-        <button>UPLOAD PICTURE</button>
-        <button>REMOVE PICTURE</button>
+          <button>UPLOAD PICTURE</button>
+          <button>REMOVE PICTURE</button>
         </div>
       </div>
     </div>

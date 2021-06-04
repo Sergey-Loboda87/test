@@ -8,29 +8,55 @@
     border-radius: 4px;
 }
 .inform{
+    display: grid;
     height: 188px;
+    grid-template-columns: 1fr 1fr;
 }
-.inform::after{
+.informItems{
+    width: 146px;
+    height: 78px;
+    margin: 24px 0 0 24px;
+}
+.avatar{
+    margin: 24px auto;
+}
+.inform img{
+    height: 140px;
+    width: 140px;
+    border-radius: 13px;
+}
+.personName{
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+    
+}
+.geolocation{
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color:rgba(158, 160, 165, 1);
+    margin: 15px auto;
+}
+.footer{
+    height: 60px;
+}
+.footer::before{
     content: "";
     display: block;
     height: 1px;
     background: #E4E7EB;
 }
-.inform img{
-    height: 140px;
-    width: 140px;
-    left: 214px;
-    top: 26px;
-    border-radius: 13px;
-    margin: 24px 24px 85px 211px;
-}
-.footer{
-    height: 60px;
-}
 .footerItems{
     display: flex;
     justify-content: space-between;  
-    margin: 0 41px 0 41px;
+    margin: 10px 41px 0 41px;
 }
 .footer button{
     height: 40px;
