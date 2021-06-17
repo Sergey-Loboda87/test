@@ -23,7 +23,7 @@ const PortletInform = () => {
       <div className={style.footer}>
         <div className={style.footerItems}>
           <button>UPLOAD PICTURE</button>
-          <button>REMOVE PICTURE</button>
+          <button disabled>REMOVE PICTURE</button>
         </div>
       </div>
     </div>

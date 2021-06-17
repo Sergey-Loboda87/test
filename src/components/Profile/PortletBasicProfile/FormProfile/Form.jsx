@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import style from '../BasicProfile.module.css'
+import style from './Form.module.css'
 import {FormErrors} from './FormErrors';
 
 class Form extends Component {
@@ -31,7 +31,13 @@ class Form extends Component {
     handleSubmit() {
         console.log(this.state);
         const { firstName, lastName, email, tel, country, region } = this.state;
-        alert(`The form is completed and ready to be sent: \nFirst Name: ${firstName} \nLast Name: ${lastName} \nE-mail: ${email} \nTel: ${tel} \nCountry: ${country} \nRegion: ${region}`)
+        alert(`The form is completed and ready to be sent: 
+        \nFirst Name: ${firstName} 
+        \nLast Name: ${lastName} 
+        \nE-mail: ${email} 
+        \nTel: ${tel} 
+        \nCountry: ${country} 
+        \nRegion: ${region}`)
     }
 
     //обработчик событий для полей imput Через name получаем название поля ввода (атрибут name). И тут важно, что оно соответствует названию свойства из state, 
@@ -76,7 +82,6 @@ class Form extends Component {
         );
     }
 
-
     render() {
         return (
             <form className={style.body_container} action="#" method="get">
@@ -87,7 +92,6 @@ class Form extends Component {
                         name="firstName"
                         value={this.state.firstName}
                         onChange={this.handleChange}
-
                     />
                     <legend>Please specify the first name</legend>
                 </div>

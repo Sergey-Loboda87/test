@@ -1,5 +1,5 @@
 import React from 'react';
-import style from '../BasicProfile.module.css'
+import style from './Form.module.css'
 
 //Это простой функциональный компонент, который принимает объект formError 
 //и возвращает пустую строку при валидации или выводит ошибку.
