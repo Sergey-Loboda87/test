@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import style from './SaidBar.module.css'
 import ava from '../img/1.jpg'
 

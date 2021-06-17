@@ -1,15 +1,30 @@
 .app-wrapper{
-  width: 1920px;
+  max-width: 1920px;
+  max-height: 1080px;
   display: grid;
   grid-template-areas: 
   'h h'
   's n'
   's c';
 }
+@media (max-width: 320px){
+  .app-wrapper{
+    max-width: 320px;
+    display: grid;
+    grid-template-areas: 
+    'h h'
+    's n'
+    's c';
+  }
+  .app-wrapper-content{
+    grid-area: c;
+    width: 220px;
+    background: #F9FAFB;
+  }
+}
 
 .app-wrapper-content{
   grid-area: c;
   width: 1650px;
-  height: 959px;
   background: #F9FAFB;
 }

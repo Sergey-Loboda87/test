@@ -12,13 +12,10 @@
     height: 1px;
     background: #E4E7EB;
 }
-
 .navBar_items{
     vertical-align: top;
     width: 314px;
     height: 38px;
-    left: 294px;
-    top: 83px;
     padding-left: 24px;
     padding-top: 19px;
     display: flex;
@@ -26,7 +23,6 @@
     justify-content: space-around;
     align-items: center;
 }
-
 .navBar_items a{
     text-decoration: none;
     font-family: Roboto;
@@ -37,4 +33,29 @@
     letter-spacing: -0.05px;
     color: #3A3B3F;
 }
+@media (max-width: 320px){
+    .navBar{
+        grid-area: n;
+        position: relative;
+        width: 220px;
+        height: 15px;  
+    }
+    .navBar::after{
+        content: "";
+        display: block;
+        width: 220px;
+        height: 0.5px;
+    }
+    .navBar_items{
+        width: 220px;
+        height: 20px;
+        padding-left: 5px;
+        padding-top: 2px;
+    }
+    .navBar_items a{
+        font-size: 8px;
+        line-height: 5px;
+    }
+}
+
 
