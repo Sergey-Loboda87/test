@@ -1,6 +1,6 @@
 .profile{
-    padding-left: 28px ;
-    padding-top: 28px;
+    margin-top: 28px;
+    margin-left: 28px;
     display: grid;
     grid-template-columns: 375px 910px;
     grid-template-areas: 
@@ -11,8 +11,8 @@
 @media (max-width: 320px){
     .profile{
         width: 220px;
-        padding-left: 0px ;
-        padding-top: 12px;
+        margin-top: 10px;
+        margin-left: 5px;
         display: grid;
         grid-template-columns: 90px 120px;
         grid-template-areas: 

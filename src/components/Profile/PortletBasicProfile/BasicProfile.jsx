@@ -2,7 +2,6 @@ import React from 'react';
 import style from './BasicProfile.module.css';
 import Form from './FormProfile/Form'
 
-
 const BasicProfile = () => {
 
   return (
