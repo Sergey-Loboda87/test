@@ -7,9 +7,14 @@
   's n'
   's c';
 }
+.app-wrapper-content{
+  grid-area: c;
+  width: 1650px;
+  background: #F9FAFB;
+}
 @media (max-width: 320px){
   .app-wrapper{
-    max-width: 320px;
+    width: 320px;
     display: grid;
     grid-template-areas: 
     'h h'
@@ -23,8 +28,3 @@
   }
 }
 
-.app-wrapper-content{
-  grid-area: c;
-  width: 1650px;
-  background: #F9FAFB;
-}
