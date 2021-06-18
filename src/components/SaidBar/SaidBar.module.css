@@ -92,26 +92,26 @@
     }
     .avatar{
         height: 70px;
-        width: 45px;
-        margin: 14px auto;
+        width: 50px;
+        margin: 10px auto;
     }
     .avatar img{
-        height: 40px;
-        width: 40px;
+        height: 50px;
+        width: 50px;
     }
     .initials{
         height: 10px;
-        font-size: 6px;
-        line-height: 12px;
+        font-size: 7px;
+        line-height: 10px;
     }
     .position{
-        font-size: 5px;
-        line-height: 5px;
+        font-size: 6px;
+        line-height: 8px;
     }
     .position::after{
         width: 90px;
         margin-top: 5px;
-        margin-left: -23px;
+        margin-left: -21px;
     }
     .navMenu{
         width: 100px;
@@ -119,15 +119,16 @@
 
     }
     .menu_items{
-    font-size: 6px;
-    line-height: 10px;
+    margin-top: 25px;
+    font-size: 7px;
+    line-height: 15px;
     text-align: left;
     color: #66788A;
     }
     .menu_items::after{
         width: 90px;
         margin-top: 5px;
-        margin-left: -42px;
+        margin-left: -40px;
     }
     .supportMenu{
         width: 100px;
