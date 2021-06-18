@@ -1,6 +1,5 @@
 .saidBar{
     grid-area: s;
-    width: 270px;
 }
 .avatar{
     height: 156px;
@@ -42,7 +41,7 @@
     margin-left: -65px;
 }
 .navMenu{
-    width: 238px;
+    width: 100%;
     margin: 0 auto;
     margin-left: 55px;
 }
@@ -82,12 +81,60 @@
     color: rgba(102, 120, 138, 1);
     margin-left: 55px;
 }
-@media (max-width: 320px){
-    .saidBar{
-        grid-area: s;
-        width: 100px;
-    }
+@media (max-width: 375px){
     .saidBar br{
+     display: none;
+ }
+ .avatar{
+     height: 70px;
+     width: 50px;
+     margin: 10px auto;
+ }
+ .avatar img{
+     height: 50px;
+     width: 50px;
+ }
+ .initials{
+     height: 10px;
+     font-size: 7px;
+     line-height: 10px;
+ }
+ .position{
+     font-size: 6px;
+     line-height: 8px;
+ }
+ .position::after{
+     width: 90px;
+     margin-top: 5px;
+     margin-left: -20px;
+ }
+ .navMenu{
+     margin-left: 5px;
+ }
+ .menu_items{
+ margin-top: 25px;
+ font-size: 7px;
+ line-height: 15px;
+ }
+ .menu_items::after{
+     width: 90px;
+     margin-top: 5px;
+     margin-left: -40px;
+ }
+ .supportMenu{
+     width: 100px;
+ }
+ .supportMenu span{
+     font-size: 7px;
+     text-align: left;  
+ }
+ .supportMenu li{
+     font-size: 6px;
+     margin-left: 15px;
+ } 
+}
+@media (max-width: 320px){
+       .saidBar br{
         display: none;
     }
     .avatar{
@@ -111,24 +158,20 @@
     .position::after{
         width: 90px;
         margin-top: 5px;
-        margin-left: -23px;
+        margin-left: -20px;
     }
     .navMenu{
-        width: 100px;
         margin-left: 5px;
-
     }
     .menu_items{
     margin-top: 25px;
     font-size: 7px;
     line-height: 15px;
-    text-align: left;
-    color: #66788A;
     }
     .menu_items::after{
         width: 90px;
         margin-top: 5px;
-        margin-left: -42px;
+        margin-left: -40px;
     }
     .supportMenu{
         width: 100px;

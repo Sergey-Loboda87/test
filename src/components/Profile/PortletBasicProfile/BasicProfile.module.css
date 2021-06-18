@@ -41,7 +41,33 @@
 .item_body{
     height: 293px;
 }
-
+@media (max-width: 375px){
+    .item_container{
+        grid-area: b;
+        width: 200px;
+        height: 220px;
+    }
+    .item_header{
+        height: 15px;
+    }
+    .item_header::after{
+        margin-top: 2px;
+    }
+    .header_container{
+        padding-top: 5px;
+        padding-left: 10px;
+        font-size: 4px;
+        line-height: 10px;
+    }
+    .header_container span{
+        padding-right: 8px;
+        font-size: 10px;
+        line-height: 10px;
+    }
+    .item_body{
+        height: 175px;
+    }
+}
 @media (max-width: 320px){
     .item_container{
         grid-area: b;

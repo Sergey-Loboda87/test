@@ -40,7 +40,7 @@
     font-size: medium;
     color: red;
 }
-@media (max-width: 320px){
+@media (max-width: 375px){
     .body_container{
         display: grid;
         grid-template-columns: 1fr;
@@ -67,5 +67,32 @@
     .contain_error{
         font-size: 6px;
     }
-    
+}
+@media (max-width: 320px){
+    .body_container{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-left: 8px;
+        padding-top: 15px;
+        font-size: 6px;
+        gap: 10px;
+    }
+    .buttom_container{
+        margin-left: 24px;
+        padding-top: 24px;
+    }
+    .button{
+        width: 60px;
+        height: 15px;
+        font-size: 5px;
+        line-height: 5px;
+    }
+    .body_container input{
+        width: 150px;
+        height: 10px;
+        font-size: 8px;
+    }
+    .contain_error{
+        font-size: 6px;
+    } 
 }
