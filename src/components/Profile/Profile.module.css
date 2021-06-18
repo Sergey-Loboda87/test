@@ -8,10 +8,22 @@
     'none n';
     gap: 28px 28px;  
 }
+@media (max-width: 414px){
+    .profile{
+        margin-top: 15px;
+        margin-left: 15px;
+        display: grid;
+        grid-template-areas: 
+        'p p'
+        'b b'
+        'n n';
+        gap: 5px;  
+    }
+}
 @media (max-width: 375px){
     .profile{
-        margin-top: 20px;
-        margin-left: 15px;
+        margin-top: 10px;
+        margin-left: 10px;
         padding-right: 10px;
         display: grid;
         grid-template-areas: 
@@ -23,7 +35,7 @@
 }
 @media (max-width: 320px){
     .profile{
-        margin-top: 10px;
+        margin-top: 5px;
         margin-left: 5px;
         padding-right: 10px;
         display: grid;

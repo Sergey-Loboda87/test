@@ -70,10 +70,58 @@
     border: none;
     background: none;
 }
-@media (max-width: 375px){
+@media (max-width: 414px){
     .item_container{
         grid-area: p;
-        width: 200px;
+        width: 260px;
+        height: 120px;
+    }
+    .inform{
+        display: grid;
+        height: 90px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .informItems{
+        width: 80px;
+        height: 45px;
+        margin: 15px 0px 15px 25px;
+    }
+    .avatar{
+        margin: 5px auto;
+    }
+    .inform img{
+        height: 80px;
+        width: 80px;
+        border-radius: 11px;
+    }
+    .personName{
+        font-size: 14px;
+        line-height: 6px;
+        
+    }
+    .geolocation{
+        font-size: 8px;
+        line-height: 15px;
+        margin: 5px auto;
+    }
+    .footer{
+      height: 25px;
+    }
+    .footerItems{
+        display: flex;
+        justify-content: space-between;  
+        margin: 5px 10px 0 41px;
+    }
+    .footer button{
+        height: 15px;
+        width: 70px;
+        border-radius: 4px; 
+        font-size: 7px; 
+    }
+}
+@media (max-width: 375px){
+    .item_container{
+        width: 220px;
         height: 100px;
     }
     .inform{
@@ -116,9 +164,7 @@
         height: 15px;
         width: 70px;
         border-radius: 4px; 
-        font-size: 6px;
-        letter-spacing: 2.5px;
-        
+        font-size: 6px; 
     }
 }
 @media (max-width: 320px){
@@ -168,7 +214,5 @@
         width: 70px;
         border-radius: 4px; 
         font-size: 6px;
-        letter-spacing: 2.5px;
-        
     }
 }

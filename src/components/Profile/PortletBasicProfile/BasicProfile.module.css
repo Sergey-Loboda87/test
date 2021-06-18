@@ -41,10 +41,35 @@
 .item_body{
     height: 293px;
 }
+@media (max-width: 414px){
+    .item_container{
+        width: 260px;
+        height: 285px;
+    }
+    .item_header{
+        height: 25px;
+    }
+    .item_header::after{
+        margin-top: 8px;
+    }
+    .header_container{
+        padding-top: 5px;
+        padding-left: 10px;
+        font-size: 7px;
+        line-height: 10px;
+    }
+    .header_container span{
+        padding-right: 10px;
+        font-size: 11px;
+        line-height: 10px;
+    }
+    .item_body{
+        height: 175px;
+    }
+}
 @media (max-width: 375px){
     .item_container{
-        grid-area: b;
-        width: 200px;
+        width: 220px;
         height: 220px;
     }
     .item_header{
@@ -70,7 +95,6 @@
 }
 @media (max-width: 320px){
     .item_container{
-        grid-area: b;
         width: 200px;
         height: 220px;
     }

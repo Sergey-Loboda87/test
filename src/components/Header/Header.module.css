@@ -59,6 +59,43 @@
     font-weight: 500;
     color: rgba(255, 255, 255, 1);
     }
+    @media (max-width: 414px) {
+        .header{
+            grid-area: h;
+            height: 30px;   
+        }
+        .logo{
+            height: 18px;
+            width: 18px;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+        .name{
+            height: 15px;
+            width: 35px;
+            margin-left: 4px;
+            margin-top: 10px;
+            font-size: 8px;
+        }
+        .inform{
+            height: 15px;
+            width: 300px;
+            margin-left: 10px;
+            margin-top: 7px;
+            }
+        .inform p{
+            padding-left: 5px;
+            font-size: 5px;
+            line-height: 1.5px;
+        }    
+        .free{
+            padding-left: 2px;
+            height: 9px;
+            width: 13px;
+            font-size: 4.5px;
+            border-radius: 2px;
+            }
+      } 
     @media (max-width: 375px) {
         .header{
             grid-area: h;
@@ -67,7 +104,6 @@
         .logo{
             height: 15px;
             width: 15px;
-            border-radius: 50%;
             margin-top: 5px;
             margin-left: 10px;
         }
@@ -76,7 +112,6 @@
             width: 30px;
             margin-left: 3px;
             margin-top: 10px;
-            font-family: Roboto;
             font-size: 6px;
         }
         .inform{
@@ -84,7 +119,6 @@
             width: 255px;
             margin-left: 10px;
             margin-top: 4px;
-            margin-right: 5px;
             }
         .inform p{
             padding-left: 5px;
@@ -107,7 +141,6 @@
         .logo{
             height: 15px;
             width: 15px;
-            border-radius: 50%;
             margin-top: 5px;
             margin-left: 10px;
         }
@@ -116,7 +149,6 @@
             width: 30px;
             margin-left: 3px;
             margin-top: 10px;
-            font-family: Roboto;
             font-size: 6px;
         }
         .inform{
@@ -124,7 +156,6 @@
             width: 255px;
             margin-left: 10px;
             margin-top: 4px;
-            margin-right: 5px;
             }
         .inform p{
             padding-left: 5px;
