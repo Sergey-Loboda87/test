@@ -93,6 +93,174 @@
     letter-spacing: -0.05px;
     text-align: left;  
 }
+@media (max-width: 1024px){
+    .item_container{
+        width: 450px;
+        height: 250px;
+    }
+    .item_header{
+        height: 45px;
+    }
+    .item_header::after{
+        margin-top: 10px;
+    }
+    .header_container{
+        padding-top: 14px;
+        padding-left: 10px;
+        font-size: 10px;
+    }
+    .header_container span{
+        padding-right: 16px;
+        font-size: 15px;
+        line-height: 16px;
+    }
+    .item_body{
+        height: 160px;
+        grid-column-gap: 10px;
+        grid-template-columns: 50% 50%;
+        font-size: 13px;
+        line-height: 7px;
+    }
+    .item_body::after{
+        width: 450px;
+        height: 1px;
+        margin-left: -24px;
+    }
+    .item_footer{
+        height: 45px;
+    }
+    .buttom_container{
+        height: 45px;
+        margin-left: 15px;
+        padding-top: 9px;
+    }
+    .button{
+        width: 120px;
+        height: 30px;
+        font-size: 12px;
+        line-height: 4px;
+    }
+    .item_body input{
+        width: 15px;
+        height: 15px;   
+    }
+    .item_body h2{
+        font-size: 13px;
+        line-height: 5px;
+    }
+}
+@media (max-width: 812px){
+    .item_container{
+        width: 450px;
+        height: 250px;
+    }
+    .item_header{
+        height: 45px;
+    }
+    .item_header::after{
+        margin-top: 10px;
+    }
+    .header_container{
+        padding-top: 14px;
+        padding-left: 10px;
+        font-size: 10px;
+    }
+    .header_container span{
+        padding-right: 16px;
+        font-size: 15px;
+        line-height: 16px;
+    }
+    .item_body{
+        height: 160px;
+        grid-column-gap: 10px;
+        grid-template-columns: 50% 50%;
+        font-size: 13px;
+        line-height: 7px;
+    }
+    .item_body::after{
+        width: 450px;
+        height: 1px;
+        margin-left: -24px;
+    }
+    .item_footer{
+        height: 45px;
+    }
+    .buttom_container{
+        height: 45px;
+        margin-left: 15px;
+        padding-top: 9px;
+    }
+    .button{
+        width: 120px;
+        height: 30px;
+        font-size: 12px;
+        line-height: 4px;
+    }
+    .item_body input{
+        width: 15px;
+        height: 15px;   
+    }
+    .item_body h2{
+        font-size: 13px;
+        line-height: 5px;
+    }
+}
+@media (max-width: 768px){
+    .item_container{
+        width: 450px;
+        height: 250px;
+    }
+    .item_header{
+        height: 45px;
+    }
+    .item_header::after{
+        margin-top: 10px;
+    }
+    .header_container{
+        padding-top: 14px;
+        padding-left: 10px;
+        font-size: 10px;
+    }
+    .header_container span{
+        padding-right: 16px;
+        font-size: 15px;
+        line-height: 16px;
+    }
+    .item_body{
+        height: 160px;
+        grid-column-gap: 10px;
+        grid-template-columns: 50% 50%;
+        font-size: 13px;
+        line-height: 7px;
+    }
+    .item_body::after{
+        width: 450px;
+        height: 1px;
+        margin-left: -24px;
+    }
+    .item_footer{
+        height: 45px;
+    }
+    .buttom_container{
+        height: 45px;
+        margin-left: 15px;
+        padding-top: 9px;
+    }
+    .button{
+        width: 120px;
+        height: 30px;
+        font-size: 12px;
+        line-height: 4px;
+    }
+    .item_body input{
+        width: 15px;
+        height: 15px;   
+    }
+    .item_body h2{
+        font-size: 13px;
+        line-height: 5px;
+    }
+}
 @media (max-width: 667px){
     .item_container{
         width: 450px;

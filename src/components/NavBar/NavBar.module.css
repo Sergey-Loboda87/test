@@ -33,6 +33,20 @@
     letter-spacing: -0.05px;
     color: #3A3B3F;
 }
+@media (max-width: 768px){
+    .navBar{
+        height: 55px;  
+    }
+    .navBar_items{
+        width: 220px;
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+    .navBar_items a{
+        font-size: 15px;
+        line-height: 5px;
+    }
+}
 @media (max-width: 667px){
     .navBar{
         height: 45px;  
