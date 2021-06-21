@@ -79,6 +79,54 @@
     color: rgba(102, 120, 138, 1);
     margin-left: 55px;
 }
+@media (max-width: 667px){
+    .saidBar br{
+     display: none;
+ }
+ .avatar{
+     height: 120px;
+     width: 110px;
+     margin: 20px auto;
+ }
+ .avatar img{
+     height: 110px;
+     width: 110px;
+ }
+ .initials{
+     font-size: 15px;
+     line-height: 7px;
+ }
+ .position{
+     font-size: 14px;
+     line-height: 0px;
+ }
+ .position::after{
+     width: 140px;
+     margin-top: 15px;
+     margin-left: -15px;
+ }
+ .navMenu{
+     margin-left: 10px;
+ }
+ .menu_items{
+ margin-top: 65px;
+ font-size: 12px;
+ line-height: 25px;
+ }
+ .menu_items::after{
+     width: 140px;
+     margin-top: 5px;
+     margin-left: -30px;
+ }
+ .supportMenu span{
+     font-size: 12px;
+     text-align: left;  
+ }
+ .supportMenu li{
+     font-size: 11px;
+     margin-left: 15px;
+ } 
+}
 @media (max-width: 414px){
     .saidBar br{
      display: none;

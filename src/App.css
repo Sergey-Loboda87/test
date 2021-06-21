@@ -13,6 +13,17 @@
   width: 100%;
   background: #F9FAFB;
 }
+@media (max-width: 667px) {
+  .app-wrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 480px;
+    grid-template-areas: 
+    'h h'
+    's n'
+    's c';
+  }
+} 
 @media (max-width: 414px) {
   .app-wrapper{
     width: 100%;
